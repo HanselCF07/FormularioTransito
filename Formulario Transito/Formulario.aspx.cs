@@ -17,5 +17,13 @@ namespace Formulario_Transito
         {
 
         }
+
+        protected void Button_Click(object sender, EventArgs e)
+        {
+            int ti = int.Parse(tb_7d.Text);
+            int phone = int.Parse(tb_7g.Text);
+
+        }
+
     }
 }
