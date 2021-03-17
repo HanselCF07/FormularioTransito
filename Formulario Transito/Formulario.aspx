@@ -85,8 +85,7 @@
                     <td>
                         <asp:TextBox ID="TextBox2" runat="server" type="Number" Width="100%"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="TextBox2" ErrorMessage="Campo requerido">Debe ingresar Numeros de la Placa</asp:RequiredFieldValidator> 
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ControlToValidate="TextBox2" ErrorMessage="*" Display="Dynamic" ValidationExpression="([0-9]){3}"> Digite 3 #</asp:RegularExpressionValidator>
-                        
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ControlToValidate="TextBox2" ErrorMessage="*" Display="Dynamic" ValidationExpression="([0-9]){3}"> Digite 3 #</asp:RegularExpressionValidator>                        
                     </td>
                 </tr>
             </table>
@@ -99,7 +98,7 @@
                 <tr>
                     <td class="num-td">1</td>
                     <td>
-                        <asp:RadioButton ID="RadioButton1" runat="server" GroupName="rb1" Checked="True"/>
+                        <asp:RadioButton ID="RadioButton1" runat="server" GroupName="rb1" Checked="True" />
                         <p class="td-p">MATRÍCULA<br>REGISTRO</p>
                     </td>
                     <td class="num-td">2</td>
@@ -192,61 +191,72 @@
                         <p class="td-p">OTROS</p>
                     </td>
                 </tr>
+                               
             </table>
         </div>
         <div>
-        <table style="width:100%">                
-            <tr>               
-                <th colspan="7">4. CLASE DE VEHICULO</th>
-            </tr>
-            <tr>
-                <th>AUTOMOVIL</th>
-                <th>BUS</th>
-                <th>BUSETA</th>
-                <th>CAMION</th>
-                <th>CAMINETA</th>
-                <th>CAMPERO</th>
-                <th>MICROBUS</th>
-            </tr>
-            <tr>
-                <td> <asp:RadioButton ID="RadioButton19" runat="server" GroupName="rb2" Checked="True"/> </td>
-                <td> <asp:RadioButton ID="RadioButton20" runat="server" GroupName="rb2"/> </td>
-                <td> <asp:RadioButton ID="RadioButton21" runat="server" GroupName="rb2"/> </td>
-                <td> <asp:RadioButton ID="RadioButton22" runat="server" GroupName="rb2"/> </td>
-                <td> <asp:RadioButton ID="RadioButton23" runat="server" GroupName="rb2"/> </td>
-                <td> <asp:RadioButton ID="RadioButton24" runat="server" GroupName="rb2"/> </td>
-                <td> <asp:RadioButton ID="RadioButton25" runat="server" GroupName="rb2"/> </td>
-            </tr>
-              <tr>
-                <th>TRACTOCAMION</th>
-                <th>MOTOCICLETA</th>
-                <th>MOTOCARRO</th>
-                <th>MOTOTRICICLO</th>
-                <th>CUATRIMOTO</th>
-                <th>VOLQUETA</th>
-                <th>OTRO</th>
-            </tr>
-            <tr>
-                <td> <asp:RadioButton ID="RadioButton26" runat="server" GroupName="rb2"/> </td>
-                <td> <asp:RadioButton ID="RadioButton27" runat="server" GroupName="rb2"/> </td>
-                <td> <asp:RadioButton ID="RadioButton28" runat="server" GroupName="rb2"/> </td>
-                <td> <asp:RadioButton ID="RadioButton29" runat="server" GroupName="rb2"/> </td>
-                <td> <asp:RadioButton ID="RadioButton30" runat="server" GroupName="rb2"/> </td>
-                <td> <asp:RadioButton ID="RadioButton31" runat="server" GroupName="rb2"/> </td>
-                <td> <asp:RadioButton ID="RadioButton32" runat="server" GroupName="rb2"/> </td>
-            </tr>
-        </table>
+            <table style="width:100%">                
+                <tr>               
+                    <th colspan="7">4. CLASE DE VEHICULO</th>
+                </tr>
+                <tr>
+                    <th>AUTOMOVIL</th>
+                    <th>BUS</th>
+                    <th>BUSETA</th>
+                    <th>CAMION</th>
+                    <th>CAMINETA</th>
+                    <th>CAMPERO</th>
+                    <th>MICROBUS</th>
+                </tr>
+                <tr>
+                    <td> <asp:RadioButton ID="RadioButton19" runat="server" GroupName="rb2" Checked="True"/> </td>
+                    <td> <asp:RadioButton ID="RadioButton20" runat="server" GroupName="rb2"/> </td>
+                    <td> <asp:RadioButton ID="RadioButton21" runat="server" GroupName="rb2"/> </td>
+                    <td> <asp:RadioButton ID="RadioButton22" runat="server" GroupName="rb2"/> </td>
+                    <td> <asp:RadioButton ID="RadioButton23" runat="server" GroupName="rb2"/> </td>
+                    <td> <asp:RadioButton ID="RadioButton24" runat="server" GroupName="rb2"/> </td>
+                    <td> <asp:RadioButton ID="RadioButton25" runat="server" GroupName="rb2"/> </td>
+                </tr>
+                  <tr>
+                    <th>TRACTOCAMION</th>
+                    <th>MOTOCICLETA</th>
+                    <th>MOTOCARRO</th>
+                    <th>MOTOTRICICLO</th>
+                    <th>CUATRIMOTO</th>
+                    <th>VOLQUETA</th>
+                    <th>OTRO</th>
+                </tr>
+                <tr>
+                    <td> <asp:RadioButton ID="RadioButton26" runat="server" GroupName="rb2"/> </td>
+                    <td> <asp:RadioButton ID="RadioButton27" runat="server" GroupName="rb2"/> </td>
+                    <td> <asp:RadioButton ID="RadioButton28" runat="server" GroupName="rb2"/> </td>
+                    <td> <asp:RadioButton ID="RadioButton29" runat="server" GroupName="rb2"/> </td>
+                    <td> <asp:RadioButton ID="RadioButton30" runat="server" GroupName="rb2"/> </td>
+                    <td> <asp:RadioButton ID="RadioButton31" runat="server" GroupName="rb2"/> </td>
+                    <td> <asp:RadioButton ID="RadioButton32" runat="server" GroupName="rb2"/> </td>
+                </tr>
+            </table>
         </div>
         <div>
             <table style="width:100%">                
                 <tr> <th>5. MARCA</th> </tr>
                 <tr> <th> </th> </tr>
-                <tr> <td> <asp:TextBox ID="tb_2a" runat="server" Width="100%"></asp:TextBox> </td> </tr>
+                <tr> 
+                    <td> 
+                        <asp:TextBox ID="tb_2a" runat="server" Width="100%"></asp:TextBox> 
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="tb_2a" ErrorMessage="Campo requerido">Debe ingresar Letras de la Marca</asp:RequiredFieldValidator>                                                
+                     </td>
+                </tr>
             </table>
             <table style="width:100%">                
                 <tr> <th>6. LINEA</th> </tr>
                 <tr> <th> </th> </tr>
-                <tr> <td> <asp:TextBox ID="tb_2b" runat="server" Width="100%"></asp:TextBox> </td> </tr>
+                <tr>
+                    <td>
+                        <asp:TextBox ID="tb_2b" runat="server" Width="100%"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="tb_2b" ErrorMessage="Campo requerido">Debe ingresar Letras de la Linea</asp:RequiredFieldValidator>                                                
+                    </td> 
+                </tr>
             </table>
             <table style="width:100%">                
                 <tr> <th colspan="8">7. COMBUSTIBLE</th> </tr>
@@ -273,19 +283,40 @@
             </table>
             <table style="width:100%">                
                 <tr> <th>8. COLORES</th> </tr>
-                <tr> <td> <asp:TextBox ID="tb_2c" runat="server" Width="100%"></asp:TextBox> </td> </tr>
+                <tr> 
+                    <td> 
+                        <asp:TextBox ID="tb_2c" runat="server" Width="100%"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="tb_2c" ErrorMessage="Campo requerido">Debe ingresar el Color</asp:RequiredFieldValidator>                                                
+                    </td>
+                </tr>
             </table>
             <table style="width:100%">                
                 <tr> <th>9. MODELO</th> </tr>
-                <tr> <td> <asp:TextBox ID="tb_2d" runat="server" Width="100%"></asp:TextBox> </td> </tr>
+                <tr>
+                    <td>
+                        <asp:TextBox ID="tb_2d" runat="server" Width="100%"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ControlToValidate="tb_2d" ErrorMessage="Campo requerido">Debe ingresar el Modelo</asp:RequiredFieldValidator>
+                    </td>
+                </tr>
             </table>
             <table style="width:100%">                
                 <tr> <th>10. CILINDRADA</th> </tr>
-                <tr> <td> <asp:TextBox ID="tb_2e" runat="server" Width="100%"></asp:TextBox> </td> </tr>
+                <tr>
+                    <td>
+                        <asp:TextBox ID="tb_2e" type="Number" runat="server" Width="100%"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" ControlToValidate="tb_2e" ErrorMessage="Campo requerido">Debe ingresar Cilindrada</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ControlToValidate="tb_2e" ErrorMessage="*" Display="Dynamic" ValidationExpression="([0-9])*"> Digite Cilindrada</asp:RegularExpressionValidator>
+                    </td>
+                </tr>
             </table>
             <table style="width:100%">                
                 <tr> <th>11. CAPACIDAD</th> </tr>
-                <tr> <td> <asp:TextBox ID="tb_2f" runat="server" Width="100%"></asp:TextBox> </td> </tr>
+                <tr>
+                    <td>
+                        <asp:TextBox ID="tb_2f" type="Number" runat="server" Width="100%"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" ControlToValidate="tb_2f" ErrorMessage="Campo requerido">Debe ingresar Capacidad</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator7" runat="server" ControlToValidate="tb_2f" ErrorMessage="*" Display="Dynamic" ValidationExpression="([0-9])*"> Digite Capacidad</asp:RegularExpressionValidator>
+                    </td> </tr>
             </table>
              <table style="width:100%">                
                 <tr> <th>12. BLINDAJE 
@@ -303,35 +334,72 @@
             </table>
             <table style="width:100%">                
                 <tr> <th>14. POTENCIA/HP</th> </tr>
-                <tr> <td> <asp:TextBox ID="tb_2i" runat="server" Width="100%"></asp:TextBox> </td> </tr>
+                <tr>
+                    <td>
+                        <asp:TextBox ID="tb_2i" type="Number" runat="server" Width="100%"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator16" runat="server" ControlToValidate="tb_2i" ErrorMessage="Campo requerido">Debe ingresar Potencia</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator8" runat="server" ControlToValidate="tb_2i" ErrorMessage="*" Display="Dynamic" ValidationExpression="([0-9])*"> Digite Potencia</asp:RegularExpressionValidator>
+                    </td>
+                </tr>
             </table>
         </div>
         <div>
             <table style="width:100%">                
                 <tr> <th>15. CARROCERIA</th> </tr>
                 <tr> <td>CÓDIGO</td> </tr>
-                <tr> <td> <asp:TextBox ID="tb_3a" runat="server" Width="100%"></asp:TextBox> </td> </tr>
+                <tr>
+                    <td>
+                        <asp:TextBox ID="tb_3a" type="Number" runat="server" Width="100%"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator17" runat="server" ControlToValidate="tb_3a" ErrorMessage="Campo requerido">Debe ingresar Codigo de Carroceria</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator9" runat="server" ControlToValidate="tb_3a" ErrorMessage="*" Display="Dynamic" ValidationExpression="([0-9])*"> Digite Codigo, Solo Numeros</asp:RegularExpressionValidator>
+                    </td></tr>
                 <tr> <td>TIPO</td> </tr>
-                <tr> <td> <asp:TextBox ID="tb_3b" runat="server" Width="100%"></asp:TextBox> </td> </tr>
+                <tr>
+                    <td>
+                        <asp:TextBox ID="tb_3b" runat="server" Width="100%"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator18" runat="server" ControlToValidate="tb_3b" ErrorMessage="Campo requerido">Debe ingresar Tipo de Carroceria</asp:RequiredFieldValidator>
+                    </td>
+                </tr>
             </table>
         </div>
         <div>
             <table style="width:100%">                
                 <tr> <th colspan="2">16. IDENTIFICACIÓN INTERNA DEL VEHICULO</th> </tr>
                 <tr> <td>No DEL MOTOR</td> <td>REGRABADO</td> </tr>
-                <tr> <td> <asp:TextBox ID="tb_4a" runat="server" Width="100%"></asp:TextBox> </td>
+                <tr> 
+                    <td> 
+                        <asp:TextBox ID="tb_4a" type="Number" runat="server" Width="100%"></asp:TextBox> 
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator29" runat="server" ControlToValidate="tb_4a" ErrorMessage="Campo requerido">Debe ingresar No DEL MOTOR</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator14" runat="server" ControlToValidate="tb_4a" ErrorMessage="*" Display="Dynamic" ValidationExpression="([0-9])*"> Digite No VIN, Solo Numeros</asp:RegularExpressionValidator>
+                    </td>
                      <td> <asp:RadioButton ID="RadioButton45" runat="server" Text="Si" GroupName="rb6" Checked="True"/>
                         <asp:RadioButton ID="RadioButton46" runat="server" Text="No" GroupName="rb6"/> </td></tr>
                 <tr> <td>No. DE  CHASIS</td> <td>REGRABADO</td> </tr>
-                <tr> <td> <asp:TextBox ID="tb_4b" runat="server" Width="100%"></asp:TextBox> </td>
+                <tr> 
+                    <td> 
+                        <asp:TextBox ID="tb_4b" type="Number" runat="server" Width="100%"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator27" runat="server" ControlToValidate="tb_4b" ErrorMessage="Campo requerido">Debe ingresar No. DE  CHASIS</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator12" runat="server" ControlToValidate="tb_4b" ErrorMessage="*" Display="Dynamic" ValidationExpression="([0-9])*"> Digite No VIN, Solo Numeros</asp:RegularExpressionValidator>
+                    </td>
                      <td> <asp:RadioButton ID="RadioButton47" runat="server" Text="Si" GroupName="rb7" Checked="True"/>
                         <asp:RadioButton ID="RadioButton48" runat="server" Text="No" GroupName="rb7"/> </td></tr>
                 <tr> <td>No. DE SERIE</td> <td>REGRABADO</td> </tr>
-                <tr> <td> <asp:TextBox ID="tb_4c" runat="server" Width="100%"></asp:TextBox> </td>
+                <tr> 
+                    <td> 
+                        <asp:TextBox ID="tb_4c" type="Number" runat="server" Width="100%"></asp:TextBox> 
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator28" runat="server" ControlToValidate="tb_4c" ErrorMessage="Campo requerido">Debe ingresar No DE SERIE</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator13" runat="server" ControlToValidate="tb_4c" ErrorMessage="*" Display="Dynamic" ValidationExpression="([0-9])*"> Digite No VIN, Solo Numeros</asp:RegularExpressionValidator>
+                    </td>
                      <td> <asp:RadioButton ID="RadioButton49" runat="server" Text="Si" GroupName="rb8" Checked="True"/>
                         <asp:RadioButton ID="RadioButton50" runat="server" Text="No" GroupName="rb8"/> </td></tr>
                 <tr> <td colspan="2">No. DE VIN VEHÍCULOS AUTOMOTORES</td> </tr>
-                <tr> <td colspan="2"> <asp:TextBox ID="tb_4d" runat="server" Width="100%"></asp:TextBox> </td> </tr>
+                <tr>
+                    <td colspan="2">
+                        <asp:TextBox ID="tb_4d" type="Number" runat="server" Width="100%"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator19" runat="server" ControlToValidate="tb_4d" ErrorMessage="Campo requerido">Debe ingresar No VIN</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator10" runat="server" ControlToValidate="tb_4d" ErrorMessage="*" Display="Dynamic" ValidationExpression="([0-9])*"> Digite No VIN, Solo Numeros</asp:RegularExpressionValidator>
+                    </td>
+                </tr>
             </table>
         </div>
         <div>
@@ -341,22 +409,51 @@
                 <tr> 
                     <td>MANIF. O ACT <br/> <asp:RadioButton ID="RadioButton51" runat="server"  GroupName="rb9" Checked="True"/> </td> 
                     <td>DEC. DE IMPORT <br/> <asp:RadioButton ID="RadioButton52" runat="server" GroupName="rb9"/> </td> 
-                    <td>ACTA <br/> <asp:TextBox ID="tb_5a" runat="server" Width="100%"></asp:TextBox></td> 
-                    <td>ENTIDAD <br/> <asp:TextBox ID="tb_5b" runat="server" Width="100%"></asp:TextBox></td>
-                    <td>CIUDAD <br/> <asp:TextBox ID="tb_5c" runat="server" Width="100%"></asp:TextBox></td> 
-                    <td>CODIGO <br/> <asp:TextBox ID="tb_5d" runat="server" Width="100%"></asp:TextBox></td>
+                    <td>ACTA <br/> 
+                        <asp:TextBox ID="tb_5a" runat="server" Width="100%"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator20" runat="server" ControlToValidate="tb_5a" ErrorMessage="Campo requerido">Debe ingresar Acta</asp:RequiredFieldValidator>
+                    </td> 
+                    <td>ENTIDAD <br/> 
+                        <asp:TextBox ID="tb_5b" runat="server" Width="100%"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator21" runat="server" ControlToValidate="tb_5b" ErrorMessage="Campo requerido">Debe ingresar Entidad</asp:RequiredFieldValidator>
+                    </td>
+                    <td>CIUDAD <br/> 
+                        <asp:TextBox ID="tb_5c" runat="server" Width="100%"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator22" runat="server" ControlToValidate="tb_5c" ErrorMessage="Campo requerido">Debe ingresar Entidad</asp:RequiredFieldValidator>
+                    </td> 
+                    <td>CODIGO <br/> 
+                        <asp:TextBox ID="tb_5d" type="Number" runat="server" Width="100%"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator23" runat="server" ControlToValidate="tb_5d" ErrorMessage="Campo requerido">Debe ingresar Codigo</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator11" runat="server" ControlToValidate="tb_5d" ErrorMessage="*" Display="Dynamic" ValidationExpression="([0-9])*"> Digite Codigo, Solo Numeros</asp:RegularExpressionValidator>
+                    </td>
                 </tr>
                 <tr> <td colspan="3">No DOCUMENTO</td> <td colspan="3">FECHA</td> </tr>
                 <tr> 
-                    <td colspan="3" rowspan="2"> <asp:TextBox ID="tb_5e" runat="server" Width="100%" Height="50px"></asp:TextBox></td>
+                    <td colspan="3" rowspan="2"> 
+                        <asp:TextBox ID="tb_5e" type="Number" runat="server" Width="100%" Height="50px"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator30" runat="server" ControlToValidate="tb_5e" ErrorMessage="Campo requerido">Debe ingresar No DE DOCUMENTO</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator15" runat="server" ControlToValidate="tb_5e" ErrorMessage="*" Display="Dynamic" ValidationExpression="([0-9]){1,15}"> Digite No Documento, Solo Numeros</asp:RegularExpressionValidator>
+                    </td>
                     <td>DIA</td> 
                     <td>MES</td>
                     <td>AÑO</td>
                 </tr>
                 <tr>                    
-                    <td><asp:TextBox ID="tb_5f" runat="server" Width="100%"></asp:TextBox></td> 
-                    <td><asp:TextBox ID="tb_5g" runat="server" Width="100%"></asp:TextBox></td>
-                    <td><asp:TextBox ID="tb_5h" runat="server" Width="100%"></asp:TextBox></td>
+                    <td>
+                        <asp:TextBox ID="tb_5f" type="Number" runat="server" Width="100%"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator24" runat="server" ControlToValidate="tb_5f" ErrorMessage="Campo requerido, debe ser númerico">Debe ingresar el Dia</asp:RequiredFieldValidator>                        
+                        <asp:RangeValidator ID="RangeValidator3" ControlToValidate="tb_5f" Type="Integer" MinimumValue="1" MaximumValue="31" Display="Dynamic" ErrorMessage="Por favor ingrese Dia 1/31." runat="server"/>
+                    </td> 
+                    <td>
+                        <asp:TextBox ID="tb_5g" type="Number" runat="server" Width="100%"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator25" runat="server" ControlToValidate="tb_5g" ErrorMessage="Campo requerido, debe ser númerico">Debe ingresar el Mes</asp:RequiredFieldValidator>                        
+                        <asp:RangeValidator ID="RangeValidator4" ControlToValidate="tb_5g" Type="Integer" MinimumValue="1" MaximumValue="12" Display="Dynamic" ErrorMessage="Por favor ingrese Mes 1/12." runat="server"/>
+                    </td>
+                    <td>
+                        <asp:TextBox ID="tb_5h" type="Number" runat="server" Width="100%"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator26" runat="server" ControlToValidate="tb_5h" ErrorMessage="Campo requerido, debe ser númerico">Debe ingresar el Año</asp:RequiredFieldValidator>                        
+                        <asp:RangeValidator ID="RangeValidator5" ControlToValidate="tb_5h" Type="Integer" MinimumValue="1800" MaximumValue="3000" Display="Dynamic" ErrorMessage="Por favor ingrese Mes 1800/3000." runat="server"/>
+                    </td>
                 </tr>
             </table>
         </div>
@@ -375,8 +472,15 @@
                 <tr> <th colspan="6">19. EMPRESA VINCULADORA</th> </tr>
                 <tr> <td colspan="3">NOMBRE</td> <td colspan="3">NIT</td> </tr>
                 <tr>  
-                    <td colspan="3"> <asp:TextBox ID="tb_6a" runat="server" Width="100%"></asp:TextBox> </td>
-                    <td colspan="3"> <asp:TextBox ID="tb_6b" runat="server" Width="100%"></asp:TextBox> </td>
+                    <td colspan="3"> 
+                        <asp:TextBox ID="tb_6a" runat="server" Width="100%"></asp:TextBox> 
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator32" runat="server" ControlToValidate="tb_6a" ErrorMessage="Campo requerido">Debe ingresar Nombre</asp:RequiredFieldValidator>    
+                    </td>
+                    <td colspan="3"> 
+                        <asp:TextBox ID="tb_6b" type="Number" runat="server" Width="100%"></asp:TextBox> 
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator31" runat="server" ControlToValidate="tb_6b" ErrorMessage="Campo requerido, debe ser númerico">Debe ingresar NIT</asp:RequiredFieldValidator>                        
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator16" runat="server" ControlToValidate="tb_6b" ErrorMessage="*" ValidationExpression="([0-9])*">Solo numero</asp:RegularExpressionValidator>
+                    </td>
                 </tr>
             </table>
         </div>
@@ -398,9 +502,21 @@
                 <tr> <th colspan="9">21. DATOS DEL PROPIETARIO</th> </tr>
                 <tr> <td colspan="3">PRIMER APELLIDO</td> <td colspan="3">SEGUNDO APELLIDO</td> <td colspan="3">NOMBRES</td> </tr>
                 <tr>
-                    <td colspan="3"> <asp:TextBox ID="tb_7a" runat="server" Width="100%"></asp:TextBox> </td>
-                    <td colspan="3"> <asp:TextBox ID="tb_7b" runat="server" Width="100%"></asp:TextBox> </td>
-                    <td colspan="3"> <asp:TextBox ID="tb_7c" runat="server" Width="100%"></asp:TextBox> </td>
+                    <td colspan="3"> 
+                        <asp:TextBox ID="tb_7a" runat="server" Width="100%"></asp:TextBox> 
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator33" runat="server" ControlToValidate="tb_7a" ErrorMessage="Campo requerido">Debe ingresar Primer Apellido</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator17" runat="server" ControlToValidate="tb_7a" ErrorMessage="*" Display="Dynamic" ValidationExpression="([a-z]|[A-Z])*"> Digite solo letras</asp:RegularExpressionValidator>
+                    </td>
+                    <td colspan="3"> 
+                        <asp:TextBox ID="tb_7b" runat="server" Width="100%"></asp:TextBox> 
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator34" runat="server" ControlToValidate="tb_7b" ErrorMessage="Campo requerido">Debe ingresar Segundo Apellido</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator18" runat="server" ControlToValidate="tb_7b" ErrorMessage="*" Display="Dynamic" ValidationExpression="([a-z]|[A-Z])*"> Digite solo letras</asp:RegularExpressionValidator>
+                    </td>
+                    <td colspan="3"> 
+                        <asp:TextBox ID="tb_7c" runat="server" Width="100%"></asp:TextBox> 
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator35" runat="server" ControlToValidate="tb_7c" ErrorMessage="Campo requerido">Debe ingresar Nombre</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator19" runat="server" ControlToValidate="tb_7c" ErrorMessage="*" Display="Dynamic" ValidationExpression="([a-z]|[A-Z])*"> Digite solo letras</asp:RegularExpressionValidator>
+                    </td>
                 </tr>
                 <tr> <td>C.C.</td> <td>NIT</td> <td>NN</td> <td>PASAPORTE</td> <td>C. EXTRANJ.</td> <td>T. IDENTI.</td> <td>NUIP</td> <td>C. DIPLOMÁTICO</td> <td>No. DOCUMENTO</td> </tr>
                 <tr>
@@ -419,16 +535,29 @@
                 </tr>               
                 <tr> <td colspan="3">DIRECCÍÓN</td> <td colspan="3">CIUDAD</td> <td colspan="3">TELÉFONO</td> </tr>
                 <tr>
-                    <td colspan="3"> <asp:TextBox ID="tb_7e" runat="server" Width="100%"></asp:TextBox> </td>
-                    <td colspan="3"> <asp:TextBox ID="tb_7f" runat="server" Width="100%"></asp:TextBox> </td>
-                    <td colspan="3"> <asp:TextBox ID="tb_7g" runat="server" Width="100%" TextMode="Phone"></asp:TextBox>
+                    <td colspan="3"> 
+                        <asp:TextBox ID="tb_7e" runat="server" Width="100%"></asp:TextBox> 
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator36" runat="server" ControlToValidate="tb_7e" ErrorMessage="Campo requerido">Debe ingresar Dirección</asp:RequiredFieldValidator>
+                    </td>
+                    <td colspan="3"> 
+                        <asp:TextBox ID="tb_7f" runat="server" Width="100%"></asp:TextBox> 
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator37" runat="server" ControlToValidate="tb_7f" ErrorMessage="Campo requerido">Debe ingresar Ciudad</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator20" runat="server" ControlToValidate="tb_7f" ErrorMessage="*" Display="Dynamic" ValidationExpression="([a-z]|[A-Z])*"> Digite solo letras</asp:RegularExpressionValidator>
+                    </td>
+
+                    <td colspan="3"> 
+                        <asp:TextBox ID="tb_7g" runat="server" Width="100%" TextMode="Phone"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="tb_7g" ErrorMessage="Campo requerido, debe ser númerico">Debe ingresar su número de telefono</asp:RequiredFieldValidator>                        
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="tb_7g" ErrorMessage="*" ValidationExpression="([0-9])*">Solo numero</asp:RegularExpressionValidator>
                     </td>
                 </tr>
                 <tr> <th colspan="9">FIRMA DEL PROPIETARIO</th> </tr>              
                 <tr>                    
-                    <td colspan="9"> <asp:TextBox ID="tb_7h" runat="server" Width="100%"></asp:TextBox> </td>
+                    <td colspan="9"> 
+                        <asp:TextBox ID="tb_7h" runat="server" Width="100%"></asp:TextBox> 
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator38" runat="server" ControlToValidate="tb_7h" ErrorMessage="Campo requerido">Debe ingresar Firma</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator21" runat="server" ControlToValidate="tb_7h" ErrorMessage="*" Display="Dynamic" ValidationExpression="([a-z]|[A-Z])*"> Digite solo letras</asp:RegularExpressionValidator>
+                    </td>
                 </tr>
             </table>
         </div>
@@ -437,9 +566,21 @@
                 <tr> <th colspan="9">22. DATOS DEL COMPRADOR (TRASPASO)</th> </tr>
                 <tr> <td colspan="3">PRIMER APELLIDO</td> <td colspan="3">SEGUNDO APELLIDO</td> <td colspan="3">NOMBRES</td> </tr>
                 <tr>
-                    <td colspan="3"> <asp:TextBox ID="tb_8a" runat="server" Width="100%"></asp:TextBox> </td>
-                    <td colspan="3"> <asp:TextBox ID="tb_8b" runat="server" Width="100%"></asp:TextBox> </td>
-                    <td colspan="3"> <asp:TextBox ID="tb_8c" runat="server" Width="100%"></asp:TextBox> </td>
+                    <td colspan="3"> 
+                        <asp:TextBox ID="tb_8a" runat="server" Width="100%"></asp:TextBox> 
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator45" runat="server" ControlToValidate="tb_8a" ErrorMessage="Campo requerido">Debe ingresar Primer Apellido</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator27" runat="server" ControlToValidate="tb_8a" ErrorMessage="*" Display="Dynamic" ValidationExpression="([a-z]|[A-Z])*"> Digite solo letras</asp:RegularExpressionValidator>
+                    </td>
+                    <td colspan="3"> 
+                        <asp:TextBox ID="tb_8b" runat="server" Width="100%"></asp:TextBox> 
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator46" runat="server" ControlToValidate="tb_8b" ErrorMessage="Campo requerido">Debe ingresar Segundo Apellido</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator28" runat="server" ControlToValidate="tb_8b" ErrorMessage="*" Display="Dynamic" ValidationExpression="([a-z]|[A-Z])*"> Digite solo letras</asp:RegularExpressionValidator>
+                    </td>
+                    <td colspan="3"> 
+                        <asp:TextBox ID="tb_8c" runat="server" Width="100%"></asp:TextBox> 
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator47" runat="server" ControlToValidate="tb_8c" ErrorMessage="Campo requerido">Debe ingresar Nombre</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator29" runat="server" ControlToValidate="tb_8c" ErrorMessage="*" Display="Dynamic" ValidationExpression="([a-z]|[A-Z])*"> Digite solo letras</asp:RegularExpressionValidator>
+                    </td>
                 </tr>
                 <tr> <td>C.C.</td> <td>NIT</td> <td>NN</td> <td>PASAPORTE</td> <td>C. EXTRANJ.</td> <td>T. IDENTI.</td> <td>NUIP</td> <td>C. DIPLOMÁTICO</td> <td>No. DOCUMENTO</td> </tr>
                 <tr>
@@ -451,17 +592,36 @@
                     <td> <asp:RadioButton ID="RadioButton77" runat="server" GroupName="rb13"/> </td>
                     <td> <asp:RadioButton ID="RadioButton78" runat="server" GroupName="rb13"/> </td>
                     <td> <asp:RadioButton ID="RadioButton79" runat="server" GroupName="rb13"/> </td>
-                    <td> <asp:TextBox ID="tb_8d" runat="server" Width="100%"></asp:TextBox> </td>
+                    <td> 
+                        <asp:TextBox ID="tb_8d" runat="server" Width="100%"></asp:TextBox> 
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator41" runat="server" ControlToValidate="tb_8d" ErrorMessage="Campo requerido, debe ser númerico">Debe ingresar su número de documento</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator24" runat="server" ControlToValidate="tb_8d" ErrorMessage="*" ValidationExpression="([0-9])*">Solo numero</asp:RegularExpressionValidator>
+                    </td>
                 </tr>               
                 <tr> <td colspan="3">DIRECCÍÓN</td> <td colspan="3">CIUDAD</td> <td colspan="3">TELÉFONO</td> </tr>
                 <tr>
-                    <td colspan="3"> <asp:TextBox ID="tb_8e" runat="server" Width="100%"></asp:TextBox> </td>
-                    <td colspan="3"> <asp:TextBox ID="tb_8f" runat="server" Width="100%"></asp:TextBox> </td>
-                    <td colspan="3"> <asp:TextBox ID="tb_8g" runat="server" Width="100%"></asp:TextBox> </td>
+                    <td colspan="3"> 
+                        <asp:TextBox ID="tb_8e" runat="server" Width="100%"></asp:TextBox> 
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator42" runat="server" ControlToValidate="tb_8e" ErrorMessage="Campo requerido">Debe ingresar Dirección</asp:RequiredFieldValidator>
+                    </td>
+                    <td colspan="3"> 
+                        <asp:TextBox ID="tb_8f" runat="server" Width="100%"></asp:TextBox> 
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator43" runat="server" ControlToValidate="tb_8f" ErrorMessage="Campo requerido">Debe ingresar Ciudad</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator25" runat="server" ControlToValidate="tb_8f" ErrorMessage="*" Display="Dynamic" ValidationExpression="([a-z]|[A-Z])*"> Digite solo letras</asp:RegularExpressionValidator>
+                    </td>
+                    <td colspan="3"> 
+                        <asp:TextBox ID="tb_8g" runat="server" Width="100%" TextMode="Phone"></asp:TextBox> 
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator44" runat="server" ControlToValidate="tb_8g" ErrorMessage="Campo requerido, debe ser númerico">Debe ingresar su número de telefono</asp:RequiredFieldValidator>                        
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator26" runat="server" ControlToValidate="tb_8g" ErrorMessage="*" ValidationExpression="([0-9])*">Solo numero</asp:RegularExpressionValidator>
+                    </td>
                 </tr>
                 <tr> <th colspan="9">FIRMA DEL COMPRADOR</th> </tr>              
                 <tr>                    
-                    <td colspan="9"> <asp:TextBox ID="tb_8h" runat="server" Width="100%"></asp:TextBox> </td>
+                    <td colspan="9"> 
+                        <asp:TextBox ID="tb_8h" runat="server" Width="100%"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator40" runat="server" ControlToValidate="tb_8h" ErrorMessage="Campo requerido">Debe ingresar Firma</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator23" runat="server" ControlToValidate="tb_8h" ErrorMessage="*" Display="Dynamic" ValidationExpression="([a-z]|[A-Z])*"> Digite solo letras</asp:RegularExpressionValidator>
+                    </td>
                 </tr>
             </table>
         </div>
@@ -469,7 +629,13 @@
             <table style="width:100%">                
                 <tr> <th>23. OBSERVACIONES</th> </tr>
                 <tr> <td>ESPECIFIQUE LA PALABRA OTRO Y TRANSFORMACIÓN EFECTUADA AL VEHÍCULO, AMPLÍE EL TIPO DE ALERTA O LO QUE ESTIME</td> </tr>
-                <tr> <td><asp:TextBox ID="tb_9a" runat="server" Width="100%" > </asp:TextBox></td> </tr>
+                <tr> 
+                    <td>
+                        <asp:TextBox ID="tb_9a" runat="server" Width="100%" > </asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator39" runat="server" ControlToValidate="tb_9a" ErrorMessage="Campo requerido">Debe ingresar Observaciones</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator22" runat="server" ControlToValidate="tb_9a" ErrorMessage="*" Display="Dynamic" ValidationExpression="([a-z]|[A-Z])*"> Digite solo letras</asp:RegularExpressionValidator>
+                    </td>
+                </tr>
                 <tr> <td></td> </tr>
                 <tr> <th>OBSERVACIONES (PARA TRASPASO DE VEHÍCULOS AUTOMOTORES ANTES DE RUNT)</th> </tr>
                 <tr> <td>SI SU VEHÍCULO AUTOMOTOR HA SIDO MATRICULADO ANTES DEL RUNT TRANSCRIBA EN ESTE CAMPO EL TIPO DE CARROCERÍA Y<br/>
